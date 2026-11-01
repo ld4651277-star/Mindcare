@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#727973", "on-secondary": "#ffffff", "tertiary-container": "#7c7099", "on-primary-container": "#ffffff", "surface-container-high": "#e0ebe3", "surface-tint": "#436654", "inverse-surface": "#29332d", "surface-container": "#e6f0e8", "tertiary-fixed-dim": "#cebfed", "on-secondary-container": "#506859", "primary-container": "#5b7e6b", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-dim": "#d2ddd5", "on-surface-variant": "#414844", "on-secondary-fixed-variant": "#344c3e", "on-primary-fixed": "#002114", "on-surface": "#141e19", "on-background": "#141e19", "error": "#ba1a1a", "on-tertiary-container": "#ffffff", "secondary-fixed-dim": "#b2cdbb", "tertiary-fixed": "#e9ddff", "surface-container-highest": "#dbe5dd", "surface-container-lowest": "#ffffff", "surface-container-low": "#ecf6ee", "primary-fixed": "#c5ebd5", "surface": "#f1fcf4", "secondary-container": "#cbe6d4", "primary-fixed-dim": "#aacfb9", "tertiary": "#63577f", "inverse-primary": "#aacfb9", "surface-variant": "#dbe5dd", "inverse-on-surface": "#e9f3eb", "secondary": "#4c6455", "background": "#f1fcf4", "on-tertiary-fixed": "#1f1539", "outline-variant": "#c1c8c2", "secondary-fixed": "#cee9d6", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#082014", "on-primary-fixed-variant": "#2c4d3d", "on-error-container": "#93000a", "surface-bright": "#f1fcf4", "primary": "#436553", "on-tertiary-fixed-variant": "#4c4167" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-desktop": "3rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2.5rem", "gutter-tablet": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "gutter-desktop": "2rem" }, fontFamily: { "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"] }, fontSize: { "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(80,90,84,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="MindCare Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vtc-srqFCdgdWXnWQhqTW5Yss0H4Ri7x2KJo0TW2sBcGUkcUXUYYkrtrK81dJ-uXcXaf97xP9M5oMvVd8DqTOr7ZA72cOYznDsosrwfuXOBqVhP3FLHpWJ60yJ_-b2_1YkSq_zPxMasqjPHNNfA9U_ciDmzJ3fpvm7waNiSHAD8lqR2460BtFHsOugjP28SgHZvnQPDRnrE9C-C5hhviAZAxEzqExnhNSsHjyN2perjw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">MindCare</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Breathe</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><button class="w-11 h-11 flex items-center justify-center rounded-full p-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdzW9iX1FnKwweeCX2qouSUBY6SCcVMrrOraT4xXgeCwGT8n_s7NqRZyNKDcPKDdcOQxRNyZ7ZBGNOevrEx-fvMYiwaB88Yp9Q8IY7-cGe-souJAgF_RI1EYBslrPcZ86h9k4g9pt37TpqYsQlQf4vCxwlN0xmUlOTou7R2AzBLQfEqnRTik4mgv6leJ3RVHfzQJUPdfPfJb4oBQaJMOtUM8C4N9o4Oq1HSvIs8KdA"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Top Context Header -->
+<div class="pt-space-md pb-space-sm flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-space-xs">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">air</span>
+      Vagus Nerve Stimulation
+    </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Breathe &amp; Reset</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[290px] mt-0.5">
+      Synchronize your breath to soothe your nervous system into deep rest
+    </p>
+</div>
+<!-- Section 1: Technique Switcher Tabs -->
+<div class="w-full overflow-x-auto py-space-xs -mx-margin px-margin flex items-center gap-2 no-scrollbar">
+<button class="technique-tab flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary" data-exhale="8" data-hold1="7" data-hold2="0" data-inhale="4" data-name="4-7-8 Deep Sleep">
+<span class="material-symbols-outlined text-[16px]">nights_stay</span>
+<span>4-7-8 Deep Sleep</span>
+</button>
+<button class="technique-tab flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-exhale="4" data-hold1="4" data-hold2="4" data-inhale="4" data-name="Box Breathing">
+<span class="material-symbols-outlined text-[16px]">crop_square</span>
+<span>Box Breathing (Focus)</span>
+</button>
+<button class="technique-tab flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-exhale="5" data-hold1="0" data-hold2="0" data-inhale="5" data-name="Coherent 5.5s">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span>Coherent 5.5s (Balance)</span>
+</button>
+<button class="technique-tab flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-exhale="6" data-hold1="1" data-hold2="0" data-inhale="3" data-name="Panic Reset">
+<span class="material-symbols-outlined text-[16px]">healing</span>
+<span>Panic Reset (Extended Exhale)</span>
+</button>
+</div>
+<!-- Section 2: Central Interactive Breathing Visualizer -->
+<div class="mt-space-md w-full rounded-lg bg-surface-container-low p-space-md flex flex-col items-center relative overflow-hidden shadow-sm">
+<!-- Subtle Ambient Background Glow -->
+<div class="absolute inset-0 bg-gradient-to-b from-secondary-container/30 via-transparent to-primary-fixed/20 pointer-events-none"></div>
+<!-- Status Pill Bar -->
+<div class="w-full flex items-center justify-between z-10 mb-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span id="session-cycle-text">Round 3 of 8</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm shadow-sm transition-transform active:scale-95" id="session-toggle-btn">
+<span class="material-symbols-outlined text-[16px]" id="session-play-icon">pause</span>
+<span id="session-play-text">Pause</span>
+</button>
+</div>
+<!-- Breathing Orb & Circular Metronome Canvas -->
+<div class="relative w-64 h-64 my-4 flex items-center justify-center select-none">
+<!-- Outer Concentric Breathing Rings -->
+<div class="absolute w-60 h-60 rounded-full bg-primary-fixed-dim/20 transition-all duration-1000 ease-out transform scale-95 blur-md" id="glow-ring-outer"></div>
+<div class="absolute w-52 h-52 rounded-full bg-secondary-container/40 transition-all duration-700 ease-out transform scale-90" id="glow-ring-mid"></div>
+<!-- SVG Progress Arc -->
+<svg class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewbox="0 0 256 256">
+<circle class="text-surface-container-high" cx="128" cy="128" fill="none" opacity="0.6" r="112" stroke="currentColor" stroke-dasharray="703" stroke-dashoffset="0" stroke-width="5"></circle>
+<circle class="text-primary" cx="128" cy="128" fill="none" id="progress-arc" r="112" stroke="currentColor" stroke-dasharray="703.7" stroke-dashoffset="440" stroke-linecap="round" stroke-width="5" style="transition: stroke-dashoffset 0.8s ease;"></circle>
+</svg>
+<!-- Center Dynamic Orb -->
+<div class="relative z-10 w-40 h-40 rounded-full bg-surface-container-lowest shadow-md flex flex-col items-center justify-center text-center p-3 transition-transform duration-1000 ease-in-out" id="breathing-orb">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-wide transition-opacity" id="phase-instruction">Inhale through nose</span>
+<span class="font-display-mobile text-display-mobile text-primary tracking-tight font-bold my-0.5" id="phase-timer">04s</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80" id="breath-cue">Chest expanding</span>
+</div>
+</div>
+<!-- Quick Sensory Controls Underneath -->
+<div class="w-full z-10 mt-1 grid grid-cols-2 gap-2">
+<!-- Haptics Toggle Card -->
+<div class="flex items-center justify-between p-2.5 rounded-full bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2 pl-1">
+<span class="material-symbols-outlined text-[18px] text-primary">vibration</span>
+<span class="font-label-md text-label-md text-on-surface">Gentle Haptics</span>
+</div>
+<button aria-label="Toggle haptics" class="w-10 h-6 rounded-full bg-primary flex items-center transition-colors p-0.5" id="haptic-toggle">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-4 transition-transform" id="haptic-dot"></div>
+</button>
+</div>
+<!-- Ambient Preset Pill Card -->
+<div class="flex items-center justify-between p-2.5 rounded-full bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-1.5 pl-1 truncate">
+<span class="material-symbols-outlined text-[18px] text-primary">water_drop</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Forest Rain</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">45%</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Ambient Soundscape Quick Picker -->
+<div class="mt-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">graphic_eq</span>
+<h2 class="font-title-md text-title-md text-on-surface">Ambient Soundscape</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Spatial Audio</span>
+</div>
+<!-- Horizontal Swipeable Sound Cards -->
+<div class="w-full overflow-x-auto py-2 -mx-margin px-margin flex items-center gap-3 no-scrollbar">
+<!-- Sound 1: Forest Canopy (Active) -->
+<div class="sound-card min-w-[210px] p-3 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Dense emerald mossy forest canopy with soft diffused sunlight streaming through dewy ferns and ancient cedar trees in a calm serene morning atmosphere with earthy natural tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNT2Owsj-ck4OVIqG1yVhhqwZvW40-1s1x26lKEp7ajgAqFdtCiNRJsJEk_5KipOn43hzKIBJ8cOpcgMJpqhf94cTs4FYsFmUSe-XL9PV0rTVidqxeQqv7pPpSBCRYz2BVjufTeD5D7mvviP-OEPOY4GlGsf7NvLcd7x9xMiYG4HWYW8rcGtSEL1RXc_q4BjfsnBX3A5eGgPi7Xonopple4ILRw9uwD2exwJSYvdqh"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Forest Rain</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Currently Playing</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<button class="sound-play-btn w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<div class="flex-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">volume_down</span>
+<input class="w-full h-1.5 bg-surface-container rounded-full accent-primary cursor-pointer" max="100" min="0" type="range" value="45"/>
+</div>
+</div>
+</div>
+<!-- Sound 2: Ocean Tide -->
+<div class="sound-card min-w-[210px] p-3 rounded-lg bg-surface-container-low shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Gentle rhythmic turquoise ocean foam washing over smooth coastal pebble shoreline under a soft pastel lavender dawn sky, ultra-peaceful and meditative aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAV2BnvaFZWB1PeLFbCjYYtovyZDeryKv9W1RUQsEPNjn4zqXc2bYgyGiG_v-j2qeDoWir-ALbNJ2m8N9m1_kLjkRM0k_cwANr-Kw_Ursn0XTD2ZhjyhK4fd_5pyIppwtrAYos53IEkaagqkk-gINYRstd9hfmc_jLwE0YxBFl6yJABvp9PKTnnYgUM-bTHjip09k-ug_xSc7hVEmepW-flKA4dg5OdboAtKD1v9r"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Ocean Tide</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deep Resonant Surf</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<button class="sound-play-btn w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">volume_down</span>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-full accent-primary cursor-pointer" max="100" min="0" type="range" value="60"/>
+</div>
+</div>
+</div>
+<!-- Sound 3: Warm Hearth -->
+<div class="sound-card min-w-[210px] p-3 rounded-lg bg-surface-container-low shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Warm cozy glowing embers and delicate soft crackle of natural birch logs in a minimal clay ceramic hearth, soft golden amber bokeh and relaxing comforting warmth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRNdmRfKa-BGNU80aFHz2lhgPnJ1xNtEGymgVwMosDSZ3hgIUN-YfEVDBuLoQ-Ebp6FzfcbpfDt4_SWp7Ua4ipHj7nHvlL1r5y3FFbLqJeMCmcJ2fkruIV8iN0pUzslLdfp8AWDQw2l-1EtMZEsz6RsW0BGPLKZpnBn0k-DKvtwQQndvacg-PkES57eI3q7zGLE04moiA-vfg_Twf5FzsoSJZFElXfrBW2C6CRbBf"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Warm Hearth</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Subtle Birch Fire</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<button class="sound-play-btn w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">volume_down</span>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-full accent-primary cursor-pointer" max="100" min="0" type="range" value="30"/>
+</div>
+</div>
+</div>
+<!-- Sound 4: White Noise / Stream -->
+<div class="sound-card min-w-[210px] p-3 rounded-lg bg-surface-container-low shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Crystal clear shallow alpine glacial stream flowing smoothly over polished grey river stones surrounded by minimalist botanical moss in calming muted lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCy4T5kqpP1Zmvr5a03jHfxDc9liRJlEh91AnWaQ6yTWF14cda5ZgzeP2JpN011841pJWlGIQwulNL6KnzJqZpT0VL9hAZmQFJPi5ljnJikazNH6llijwM5JNUWXqYNwOpXr-9tivO7UI8XLJsNK_5MkXpdQ_Z9j_dYWJGowK3t-UDgcqdTybrU9wagmMGd1RTVKdKYz_6rcK80d_Tsd0qCcO-e5cx4ET2NwCCCQvw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Mountain Brook</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pink Noise Flow</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<button class="sound-play-btn w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">volume_down</span>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-full accent-primary cursor-pointer" max="100" min="0" type="range" value="40"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Somatic Tension Release Quick Guide -->
+<div class="mt-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">accessibility_new</span>
+<h2 class="font-title-md text-title-md text-on-surface">Somatic Tension Release</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Physical Unwinding</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Somatic Card 1 -->
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between gap-3 transition-transform active:scale-[0.99] cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">self_improvement</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Shoulder Drop &amp; Neck Unclench</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-primary font-medium">2 min practice</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Postural Reset</span>
+</div>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0 hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- Somatic Card 2 -->
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between gap-3 transition-transform active:scale-[0.99] cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">bedtime</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Progressive Muscle Relaxation</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-tertiary font-medium">5 min practice</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Full Body Scan</span>
+</div>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0 hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // Breathing state model
+    const phases = [
+      { name: 'Inhale through nose', cue: 'Expanding belly & chest', duration: 4, scale: 1.15, ringScale: 1.18 },
+      { name: 'Hold gently', cue: 'Stillness at the crest', duration: 7, scale: 1.15, ringScale: 1.18 },
+      { name: 'Slow exhale', cue: 'Releasing all tension', duration: 8, scale: 0.9, ringScale: 0.92 }
+    ];
+
+    let currentPhaseIndex = 0;
+    let secondsRemaining = phases[0].duration;
+    let isRunning = true;
+    let currentRound = 3;
+    const totalRounds = 8;
+
+    const orb = document.getElementById('breathing-orb');
+    const outerRing = document.getElementById('glow-ring-outer');
+    const midRing = document.getElementById('glow-ring-mid');
+    const instructionEl = document.getElementById('phase-instruction');
+    const timerEl = document.getElementById('phase-timer');
+    const cueEl = document.getElementById('breath-cue');
+    const arcEl = document.getElementById('progress-arc');
+    const playBtn = document.getElementById('session-toggle-btn');
+    const playIcon = document.getElementById('session-play-icon');
+    const playText = document.getElementById('session-play-text');
+    const hapticBtn = document.getElementById('haptic-toggle');
+    const hapticDot = document.getElementById('haptic-dot');
+
+    function updateVisuals(phase) {
+      if (instructionEl) instructionEl.textContent = phase.name;
+      if (cueEl) cueEl.textContent = phase.cue;
+      if (orb) orb.style.transform = `scale(${phase.scale})`;
+      if (outerRing) outerRing.style.transform = `scale(${phase.ringScale})`;
+      if (midRing) midRing.style.transform = `scale(${phase.ringScale * 0.95})`;
+
+      // Arc dashoffset animation
+      const totalLen = 703.7;
+      const progress = (totalRounds - currentRound + (1 - secondsRemaining / phase.duration)) / totalRounds;
+      const offset = totalLen * (1 - Math.min(Math.max(progress, 0.05), 0.95));
+      if (arcEl) arcEl.style.strokeDashoffset = offset;
+    }
+
+    const timerInterval = setInterval(() => {
+      if (!isRunning) return;
+
+      if (secondsRemaining > 1) {
+        secondsRemaining--;
+      } else {
+        currentPhaseIndex = (currentPhaseIndex + 1) % phases.length;
+        if (currentPhaseIndex === 0) {
+          currentRound = currentRound >= totalRounds ? 1 : currentRound + 1;
+          const cycleText = document.getElementById('session-cycle-text');
+          if (cycleText) cycleText.textContent = `Round ${currentRound} of ${totalRounds}`;
+        }
+        const nextPhase = phases[currentPhaseIndex];
+        secondsRemaining = nextPhase.duration;
+        updateVisuals(nextPhase);
+      }
+
+      if (timerEl) {
+        timerEl.textContent = `0${secondsRemaining}s`.slice(-3);
+      }
+    }, 1000);
+
+    // Initial trigger
+    updateVisuals(phases[0]);
+
+    // Play/Pause button
+    if (playBtn) {
+      playBtn.addEventListener('click', () => {
+        isRunning = !isRunning;
+        if (isRunning) {
+          playIcon.textContent = 'pause';
+          playText.textContent = 'Pause';
+        } else {
+          playIcon.textContent = 'play_arrow';
+          playText.textContent = 'Resume';
+        }
+      });
+    }
+
+    // Tab switcher micro-interaction
+    const tabs = document.querySelectorAll('.technique-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.className = 'technique-tab flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+        });
+        tab.className = 'technique-tab flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary';
+
+        const inh = parseInt(tab.dataset.inhale || '4', 10);
+        const hold = parseInt(tab.dataset.hold1 || '4', 10);
+        const exh = parseInt(tab.dataset.exhale || '4', 10);
+
+        phases[0].duration = inh;
+        phases[1].duration = hold || 2;
+        phases[2].duration = exh;
+        currentPhaseIndex = 0;
+        secondsRemaining = phases[0].duration;
+        updateVisuals(phases[0]);
+      });
+    });
+
+    // Tactile Haptic Toggle
+    let hapticActive = true;
+    if (hapticBtn && hapticDot) {
+      hapticBtn.addEventListener('click', () => {
+        hapticActive = !hapticActive;
+        if (hapticActive) {
+          hapticBtn.className = 'w-10 h-6 rounded-full bg-primary flex items-center transition-colors p-0.5';
+          hapticDot.className = 'w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-4 transition-transform';
+        } else {
+          hapticBtn.className = 'w-10 h-6 rounded-full bg-surface-container flex items-center transition-colors p-0.5';
+          hapticDot.className = 'w-5 h-5 rounded-full bg-on-surface-variant shadow-sm transform translate-x-0 transition-transform';
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(80,90,84,0.06)]" data-active-classes="bg-primary-container text-on-primary-container"><div class="h-20 px-margin flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="today" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-md text-label-md leading-none">Today</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full transition-all bg-primary-container text-on-primary-container" data-path="breathe" href="#"><span class="material-symbols-outlined text-[22px]">air</span><span class="font-label-md text-label-md leading-none">Breathe</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="journal" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-md text-label-md leading-none">Journal</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="library" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-md text-label-md leading-none">Library</span></a></div></nav></body></html>

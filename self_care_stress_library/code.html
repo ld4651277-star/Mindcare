@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#727973", "on-secondary": "#ffffff", "tertiary-container": "#7c7099", "on-primary-container": "#ffffff", "surface-container-high": "#e0ebe3", "surface-tint": "#436654", "inverse-surface": "#29332d", "surface-container": "#e6f0e8", "tertiary-fixed-dim": "#cebfed", "on-secondary-container": "#506859", "primary-container": "#5b7e6b", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-dim": "#d2ddd5", "on-surface-variant": "#414844", "on-secondary-fixed-variant": "#344c3e", "on-primary-fixed": "#002114", "on-surface": "#141e19", "on-background": "#141e19", "error": "#ba1a1a", "on-tertiary-container": "#ffffff", "secondary-fixed-dim": "#b2cdbb", "tertiary-fixed": "#e9ddff", "surface-container-highest": "#dbe5dd", "surface-container-lowest": "#ffffff", "surface-container-low": "#ecf6ee", "primary-fixed": "#c5ebd5", "surface": "#f1fcf4", "secondary-container": "#cbe6d4", "primary-fixed-dim": "#aacfb9", "tertiary": "#63577f", "inverse-primary": "#aacfb9", "surface-variant": "#dbe5dd", "inverse-on-surface": "#e9f3eb", "secondary": "#4c6455", "background": "#f1fcf4", "on-tertiary-fixed": "#1f1539", "outline-variant": "#c1c8c2", "secondary-fixed": "#cee9d6", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#082014", "on-primary-fixed-variant": "#2c4d3d", "on-error-container": "#93000a", "surface-bright": "#f1fcf4", "primary": "#436553", "on-tertiary-fixed-variant": "#4c4167" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-desktop": "3rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2.5rem", "gutter-tablet": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "gutter-desktop": "2rem" }, fontFamily: { "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"] }, fontSize: { "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(80,90,84,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="MindCare Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vtc-srqFCdgdWXnWQhqTW5Yss0H4Ri7x2KJo0TW2sBcGUkcUXUYYkrtrK81dJ-uXcXaf97xP9M5oMvVd8DqTOr7ZA72cOYznDsosrwfuXOBqVhP3FLHpWJ60yJ_-b2_1YkSq_zPxMasqjPHNNfA9U_ciDmzJ3fpvm7waNiSHAD8lqR2460BtFHsOugjP28SgHZvnQPDRnrE9C-C5hhviAZAxEzqExnhNSsHjyN2perjw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">MindCare</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Library</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><button class="w-11 h-11 flex items-center justify-center rounded-full p-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdzW9iX1FnKwweeCX2qouSUBY6SCcVMrrOraT4xXgeCwGT8n_s7NqRZyNKDcPKDdcOQxRNyZ7ZBGNOevrEx-fvMYiwaB88Yp9Q8IY7-cGe-souJAgF_RI1EYBslrPcZ86h9k4g9pt37TpqYsQlQf4vCxwlN0xmUlOTou7R2AzBLQfEqnRTik4mgv6leJ3RVHfzQJUPdfPfJb4oBQaJMOtUM8C4N9o4Oq1HSvIs8KdA"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-6 gap-space-xl">
+<!-- Search & Saved Hub -->
+<section class="flex flex-col gap-space-md pt-2">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-semibold">Curated Sanctuary</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Self-Care Library</h1>
+</div>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-high text-on-surface transition-all active:scale-95 shadow-sm" id="bookmarkTabBtn">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-label-md text-label-md font-medium">Saved (6)</span>
+</button>
+</div>
+<!-- Search Input Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full pl-11 pr-11 py-3.5 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-full shadow-sm placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all" placeholder="Search guides, meditations, sleep hygiene..." type="text"/>
+<button class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-on-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Category Pills Carousel -->
+<section class="flex flex-col gap-space-sm -mx-margin px-margin">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Explore Topics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Swipe to filter</span>
+</div>
+<div class="flex gap-2.5 overflow-x-auto no-scrollbar py-1">
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-on-primary shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="font-label-md text-label-md">Stress &amp; Anxiety</span>
+<span class="px-1.5 py-0.5 rounded-full bg-white/20 font-label-sm text-label-sm leading-none">14</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px] text-tertiary">bedtime</span>
+<span class="font-label-md text-label-md">Sleep &amp; Rest</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm leading-none">18</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">energy_savings_leaf</span>
+<span class="font-label-md text-label-md">Burnout Recovery</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm leading-none">9</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px] text-primary">filter_vintage</span>
+<span class="font-label-md text-label-md">Mindful Living</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm leading-none">22</span>
+</button>
+</div>
+</section>
+<!-- Featured Deep-Dive Masterclasses -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">auto_stories</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Featured Masterclasses</h2>
+</div>
+<button class="font-label-md text-label-md text-primary font-medium hover:underline">View all</button>
+</div>
+<!-- Masterclass 1: Nervous System -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-5 shadow-sm gap-4 transition-transform active:scale-[0.99]">
+<div class="relative w-full h-44 rounded-DEFAULT overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A serene cinematic overhead photograph of smooth organic river stones arranged neatly in warm beige sand with soft natural daylight, tranquil sage green ceramic cup, soothing herbal tea, therapeutic clean atmosphere, muted eucalyptus palette, gentle morning shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmfTf9eg0JrxKx6zwvbsf_xY4p1YhgR477zii0w5ksugx8wH0erwwY9J3q6yQmU4fyeVZFtCVn_FUT3hr2rgAKkJGIGNPsvuCBFjn2svKgABPbSoUFhnuaY0dBA79ifGBpCNIViQVFerRIDr2L8LY1-JHgSFmtfN5jA00Z8a0o7sebjUfaFMeslcEiy5436bxW6gst57K3r41acq8qn44vsejFuBzy6IxlO3XIPu_9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Evidence-Based
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>8 min read</span>
+<span class="mx-1">•</span>
+<span class="material-symbols-outlined text-[16px]">headphones</span>
+<span>12 min audio</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-on-primary hover:bg-white/30 transition-colors">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">De-escalating the Overactive Nervous System</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Understand the vagus nerve, soothe somatic stress spikes, and reclaim calm through clinically grounded grounding sequences.</p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low/60 rounded-DEFAULT px-3.5 py-2.5">
+<div class="flex items-center gap-2.5 min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0" data-alt="Professional warm portrait of Dr Elena Vance, clinical psychologist with warm kind eyes, soft neutral lighting, natural linen attire against warm cream wall, empathetic reassuring smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpPnE0UdNwCPWdycc4Z2yqv2PV7w36ewMJGaTgjkfCxM7ChPKC63teoIoGu9MRMmnqICIG5AHmJhN8DxCNfx9pVBFxAEBL2gJT2UXPdqUIoeN4nksGHmlZav3GCt9dv98f_spsSjuwb98vOxPtPGg6-hGBOnJVoXNAGdugjXbvailys7cS41L0B8N6MWdXPNklzL5sSV02kLQGKEoYr9sQJnLjNu49p3M5f38DD8RJ"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate text-xs font-semibold">Dr. Elena Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Clinical Psychologist</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Masterclass 2: Boundaries -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-5 shadow-sm gap-4 transition-transform active:scale-[0.99]">
+<div class="relative w-full h-36 rounded-DEFAULT overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist abstract arrangement of warm tactile ceramic spheres and organic linen fabric in muted lavender, sage green, and soft ivory tones, diffuse serene morning lighting, deep emotional safety and clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQRNLcU8EtAcUZrxOA-v93ZOxS_0quRPMlfGdV7-jRHiTAA6IkK6xHibN4CS51Hje9LlCZdjDQRtB6jnJMMOnaYdP13pfBfYNXuNaX9dVtcwLTCyFvrwWkzDzEsuMRSv4vUX0TGMbgnSZnI5Wp6wzuWsSKV8hOSv7x8Td1Eq_WvC82kqfUNUj1_JpL_Swdma77t8Nwhxg6VXOmuLBdo2Z99AnICk1tj_wNbVmIMOjP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+            Emotional Freedom
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 text-on-primary flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>6 min read</span>
+<span class="mx-1">•</span>
+<span>Practical Scripts</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">The Art of Saying No Without Guilt: Boundary Blueprint</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Learn clear compassionate phrasing to protect your mental energy without second-guessing or defensive friction.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Validated by Behavioral Therapists</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-medium active:scale-95 transition-all">
+          Read Guide
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Toolkits & Practical Checklists -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">checklist_rtl</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Interactive Toolkits</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to interact</span>
+</div>
+<!-- Toolkit 1: Sleep Sanctuary Checklist -->
+<div class="flex flex-col bg-surface-container rounded-lg p-5 gap-3.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">night_shelter</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Evening Sleep Sanctuary</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nightly grounding routine</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold" id="sleepProgressBadge">0/3 Ready</span>
+</div>
+<!-- Checklist Items -->
+<div class="flex flex-col gap-2 pt-1">
+<!-- Item 1 -->
+<div class="checklist-item flex items-center justify-between p-3 rounded-DEFAULT bg-surface-container-lowest transition-all cursor-pointer select-none">
+<div class="flex items-center gap-3">
+<div class="check-circle w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary opacity-0 transition-opacity">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Temperature Check (65°-68°F)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optimizes core thermal drop for deep sleep</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">thermostat</span>
+</div>
+<!-- Item 2 -->
+<div class="checklist-item flex items-center justify-between p-3 rounded-DEFAULT bg-surface-container-lowest transition-all cursor-pointer select-none">
+<div class="flex items-center gap-3">
+<div class="check-circle w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary opacity-0 transition-opacity">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Blue Light Cutoff (45m before bed)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Enables natural nocturnal melatonin surge</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">screen_lock_portrait</span>
+</div>
+<!-- Item 3 -->
+<div class="checklist-item flex items-center justify-between p-3 rounded-DEFAULT bg-surface-container-lowest transition-all cursor-pointer select-none">
+<div class="flex items-center gap-3">
+<div class="check-circle w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary opacity-0 transition-opacity">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">4-7-8 Breathing Cycle (4 rounds)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Parasympathetic activation for gentle drift</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">air</span>
+</div>
+</div>
+</div>
+<!-- Toolkit 2: Cognitive Distortions Identifier & Reframe -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-5 gap-3.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Cognitive Reframe Matrix</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CBT Micro-Practice</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">Interactive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Catch automatic negative patterns and swap in grounded, objective truths.</p>
+<!-- Interactive Accordion Tabs -->
+<div class="flex flex-col gap-2 pt-1">
+<!-- Reframe 1 -->
+<div class="reframe-card flex flex-col rounded-DEFAULT bg-surface-container-low p-3.5 transition-all">
+<button class="reframe-toggle flex items-center justify-between w-full text-left">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-title-md text-title-md text-on-surface text-sm">Catastrophizing</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="reframe-content hidden flex-col gap-2.5 pt-3">
+<div class="p-2.5 rounded-DEFAULT bg-error-container/40">
+<span class="font-label-sm text-label-sm text-on-error-container uppercase font-semibold">Distortion Trap:</span>
+<p class="font-body-sm text-body-sm text-on-surface italic mt-0.5">"If I miss this project deadline, my career is completely ruined."</p>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-secondary-container/60">
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase font-semibold">Grounded Reframe:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">"This deadline is important, but a setback is manageable and communicate-able. One bump does not define my capability."</p>
+</div>
+</div>
+</div>
+<!-- Reframe 2 -->
+<div class="reframe-card flex flex-col rounded-DEFAULT bg-surface-container-low p-3.5 transition-all">
+<button class="reframe-toggle flex items-center justify-between w-full text-left">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md text-on-surface text-sm">Black-and-White Thinking</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="reframe-content hidden flex-col gap-2.5 pt-3">
+<div class="p-2.5 rounded-DEFAULT bg-error-container/40">
+<span class="font-label-sm text-label-sm text-on-error-container uppercase font-semibold">Distortion Trap:</span>
+<p class="font-body-sm text-body-sm text-on-surface italic mt-0.5">"I broke my morning routine today, so the entire week is a total failure."</p>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-secondary-container/60">
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase font-semibold">Grounded Reframe:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">"Wellness isn't all-or-nothing. I can pause, honor today's energy, and restart mindfully with my next breath."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Immediate Support & Emergency Resources Banner -->
+<section class="flex flex-col rounded-lg bg-surface-container-high p-5 gap-4 relative overflow-hidden shadow-sm">
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-on-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Compassionate Safe Haven</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Need Immediate Human Support?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Free, confidential 24/7 Crisis &amp; Warmline Directory. Speaking with a compassionate specialist is judgment-free and always available.</p>
+</div>
+</div>
+<!-- Quick Dial / Chat Shortcuts -->
+<div class="grid grid-cols-2 gap-3 pt-1">
+<a class="flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold active:scale-95 transition-transform shadow-sm" href="tel:988">
+<span class="material-symbols-outlined text-[19px]">call</span>
+<span>Call 988 Crisis</span>
+</a>
+<a class="flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold active:scale-95 transition-transform shadow-sm" href="sms:741741">
+<span class="material-symbols-outlined text-[19px] text-tertiary">chat</span>
+<span>Text 'HOME' 741</span>
+</a>
+</div>
+<div class="flex items-center justify-center gap-2 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+<span>Anonymous, encrypted &amp; peer-supported lines available worldwide</span>
+</div>
+</section>
+</div>
+<script>
+  // Interactive Checklist Logic
+  const checklistItems = document.querySelectorAll('.checklist-item');
+  const progressBadge = document.getElementById('sleepProgressBadge');
+  let checkedCount = 0;
+
+  checklistItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const checkCircle = item.querySelector('.check-circle');
+      const checkIcon = checkCircle.querySelector('.material-symbols-outlined');
+      const isChecked = checkCircle.classList.contains('bg-primary');
+
+      if (!isChecked) {
+        checkCircle.classList.remove('bg-surface-container');
+        checkCircle.classList.add('bg-primary');
+        checkIcon.classList.remove('opacity-0');
+        checkIcon.classList.add('text-on-primary');
+        checkedCount++;
+      } else {
+        checkCircle.classList.add('bg-surface-container');
+        checkCircle.classList.remove('bg-primary');
+        checkIcon.classList.add('opacity-0');
+        checkIcon.classList.remove('text-on-primary');
+        checkedCount--;
+      }
+
+      progressBadge.textContent = `${checkedCount}/3 Ready`;
+      if (checkedCount === 3) {
+        progressBadge.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        progressBadge.classList.add('bg-primary', 'text-on-primary');
+      } else {
+        progressBadge.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        progressBadge.classList.remove('bg-primary', 'text-on-primary');
+      }
+    });
+  });
+
+  // Cognitive Reframe Accordion
+  const reframeToggles = document.querySelectorAll('.reframe-toggle');
+  reframeToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      const isExpanded = !content.classList.contains('hidden');
+
+      if (isExpanded) {
+        content.classList.add('hidden');
+        content.classList.remove('flex');
+        icon.classList.remove('rotate-180');
+      } else {
+        content.classList.remove('hidden');
+        content.classList.add('flex');
+        icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Bookmark Toggle Micro-interaction
+  const bookmarkBtn = document.getElementById('bookmarkTabBtn');
+  if (bookmarkBtn) {
+    bookmarkBtn.addEventListener('click', () => {
+      bookmarkBtn.classList.toggle('bg-primary-container');
+      bookmarkBtn.classList.toggle('text-on-primary-container');
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(80,90,84,0.06)]" data-active-classes="bg-primary-container text-on-primary-container"><div class="h-20 px-margin flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="today" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-md text-label-md leading-none">Today</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="breathe" href="#"><span class="material-symbols-outlined text-[22px]">air</span><span class="font-label-md text-label-md leading-none">Breathe</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="journal" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-md text-label-md leading-none">Journal</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 px-3 rounded-full transition-all bg-primary-container text-on-primary-container" data-path="library" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-md text-label-md leading-none">Library</span></a></div></nav></body></html>
